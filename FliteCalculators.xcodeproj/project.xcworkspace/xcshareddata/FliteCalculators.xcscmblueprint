@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "e9fff6d4-8838-4749-a28d-9a4ed21cd82c",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "e9fff6d4-8838-4749-a28d-9a4ed21cd82c" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "e9fff6d4-8838-4749-a28d-9a4ed21cd82c" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "75980CBC-1427-46B8-91A7-72AD7391B590",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "e9fff6d4-8838-4749-a28d-9a4ed21cd82c" : "novacode\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FliteCalculators",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "trunk\/E6B\/FliteCalculators.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/subversion.assembla.com\/svn\/novacode",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "e9fff6d4-8838-4749-a28d-9a4ed21cd82c"
+    }
+  ]
+}

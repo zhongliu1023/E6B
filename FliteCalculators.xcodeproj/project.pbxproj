@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		038B42431DD75C7F0057E3AA /* TMLineGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 038B42421DD75C7F0057E3AA /* TMLineGraph.m */; };
+		039DA3361DD0B86D00EA9DA6 /* PerformanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 039DA3341DD0B86D00EA9DA6 /* PerformanceCell.m */; };
+		039DA3371DD0B86D00EA9DA6 /* PerformanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039DA3351DD0B86D00EA9DA6 /* PerformanceCell.xib */; };
+		039DA3401DD0D21300EA9DA6 /* FlightPlanningCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 039DA33E1DD0D21300EA9DA6 /* FlightPlanningCell.m */; };
+		039DA3411DD0D21300EA9DA6 /* FlightPlanningCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039DA33F1DD0D21300EA9DA6 /* FlightPlanningCell.xib */; };
+		D3449B661D925F6F0050BB3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3449B651D925F6F0050BB3D /* main.m */; };
+		D3449B711D925F6F0050BB3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3449B701D925F6F0050BB3D /* Assets.xcassets */; };
+		D3449B811D92619D0050BB3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3449B801D92619D0050BB3D /* AppDelegate.m */; };
+		D3449B851D9263BA0050BB3D /* FliteCalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3449B831D9263BA0050BB3D /* FliteCalcViewController.m */; };
+		D3449B861D9263BA0050BB3D /* FliteCalcViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3449B841D9263BA0050BB3D /* FliteCalcViewController.xib */; };
+		D3449B9A1D9276D20050BB3D /* ConversionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3449B951D9276D20050BB3D /* ConversionsCell.m */; };
+		D3449B9B1D9276D20050BB3D /* ConversionsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3449B961D9276D20050BB3D /* ConversionsCell.xib */; };
+		D3449B9D1D9276D20050BB3D /* CalculationsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3449B991D9276D20050BB3D /* CalculationsCell.xib */; };
+		D3449BA41D9284210050BB3D /* SectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3449BA31D9284210050BB3D /* SectionHeaderView.m */; };
+		D3449BA61D9284E50050BB3D /* SectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3449BA51D9284E50050BB3D /* SectionHeaderView.xib */; };
+		FC4FE63E1DC89068005F6BDB /* CalculationsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D3449B981D9276D20050BB3D /* CalculationsCell.m */; };
+		FC72CF791DD49441002ECE40 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC72CF771DD49441002ECE40 /* CustomCell.m */; };
+		FC72CF7A1DD49441002ECE40 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC72CF781DD49441002ECE40 /* CustomCell.xib */; };
+		FC7F000C1DD1ACAF0048DC10 /* FliteCalculators.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC7F000A1DD1ACAF0048DC10 /* FliteCalculators.xcdatamodeld */; };
+		FC7F00141DD1C4BE0048DC10 /* WeightBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = FC7F00131DD1C4BE0048DC10 /* WeightBalance.m */; };
+		FCB116321DD06F6C00FA8F28 /* CalculatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB116311DD06F6C00FA8F28 /* CalculatorViewController.m */; };
+		FCB116581DD0861000FA8F28 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB116361DD0861000FA8F28 /* IQNSArray+Sort.m */; };
+		FCB116591DD0861100FA8F28 /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB116381DD0861000FA8F28 /* IQUIScrollView+Additions.m */; };
+		FCB1165A1DD0861100FA8F28 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB1163A1DD0861000FA8F28 /* IQUITextFieldView+Additions.m */; };
+		FCB1165B1DD0861100FA8F28 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB1163C1DD0861000FA8F28 /* IQUIView+Hierarchy.m */; };
+		FCB1165C1DD0861100FA8F28 /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB1163E1DD0861000FA8F28 /* IQUIViewController+Additions.m */; };
+		FCB1165D1DD0861100FA8F28 /* IQUIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB116401DD0861000FA8F28 /* IQUIWindow+Hierarchy.m */; };
+		FCB1165E1DD0861100FA8F28 /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB116451DD0861000FA8F28 /* IQKeyboardManager.m */; };
+		FCB1165F1DD0861100FA8F28 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB116471DD0861000FA8F28 /* IQKeyboardReturnKeyHandler.m */; };
+		FCB116601DD0861100FA8F28 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB1164A1DD0861000FA8F28 /* IQTextView.m */; };
+		FCB116611DD0861100FA8F28 /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB1164D1DD0861000FA8F28 /* IQBarButtonItem.m */; };
+		FCB116621DD0861100FA8F28 /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB1164F1DD0861000FA8F28 /* IQPreviousNextView.m */; };
+		FCB116631DD0861100FA8F28 /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB116511DD0861000FA8F28 /* IQTitleBarButtonItem.m */; };
+		FCB116641DD0861100FA8F28 /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB116531DD0861000FA8F28 /* IQToolbar.m */; };
+		FCB116651DD0861100FA8F28 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB116551DD0861000FA8F28 /* IQUIView+IQKeyboardToolbar.m */; };
+		FCB116661DD0861100FA8F28 /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FCB116571DD0861000FA8F28 /* IQKeyboardManager.bundle */; };
+		FCB52FC41DD4882A00A36672 /* FlightPlanning.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB52FC11DD4882A00A36672 /* FlightPlanning.m */; };
+		FCB52FC51DD4882A00A36672 /* FlightPlanning+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB52FC31DD4882A00A36672 /* FlightPlanning+CoreDataProperties.m */; };
+		FCDCB63C1DCB559200AA5F1C /* WeightAndBalanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCDCB63A1DCB559200AA5F1C /* WeightAndBalanceCell.m */; };
+		FCDCB63D1DCB559200AA5F1C /* WeightAndBalanceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCDCB63B1DCB559200AA5F1C /* WeightAndBalanceCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		038B42411DD75C7F0057E3AA /* TMLineGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMLineGraph.h; sourceTree = "<group>"; };
+		038B42421DD75C7F0057E3AA /* TMLineGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMLineGraph.m; sourceTree = "<group>"; };
+		039DA3331DD0B86D00EA9DA6 /* PerformanceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformanceCell.h; sourceTree = "<group>"; };
+		039DA3341DD0B86D00EA9DA6 /* PerformanceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformanceCell.m; sourceTree = "<group>"; };
+		039DA3351DD0B86D00EA9DA6 /* PerformanceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PerformanceCell.xib; sourceTree = "<group>"; };
+		039DA33D1DD0D21300EA9DA6 /* FlightPlanningCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightPlanningCell.h; sourceTree = "<group>"; };
+		039DA33E1DD0D21300EA9DA6 /* FlightPlanningCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightPlanningCell.m; sourceTree = "<group>"; };
+		039DA33F1DD0D21300EA9DA6 /* FlightPlanningCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightPlanningCell.xib; sourceTree = "<group>"; };
+		D3449B611D925F6F0050BB3D /* FliteCalculators.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FliteCalculators.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3449B651D925F6F0050BB3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D3449B701D925F6F0050BB3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3449B751D925F6F0050BB3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3449B7F1D92619D0050BB3D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D3449B801D92619D0050BB3D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D3449B821D9263BA0050BB3D /* FliteCalcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FliteCalcViewController.h; sourceTree = "<group>"; };
+		D3449B831D9263BA0050BB3D /* FliteCalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FliteCalcViewController.m; sourceTree = "<group>"; };
+		D3449B841D9263BA0050BB3D /* FliteCalcViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FliteCalcViewController.xib; sourceTree = "<group>"; };
+		D3449B941D9276D20050BB3D /* ConversionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionsCell.h; sourceTree = "<group>"; };
+		D3449B951D9276D20050BB3D /* ConversionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversionsCell.m; sourceTree = "<group>"; };
+		D3449B961D9276D20050BB3D /* ConversionsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConversionsCell.xib; sourceTree = "<group>"; };
+		D3449B971D9276D20050BB3D /* CalculationsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculationsCell.h; sourceTree = "<group>"; };
+		D3449B981D9276D20050BB3D /* CalculationsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationsCell.m; sourceTree = "<group>"; };
+		D3449B991D9276D20050BB3D /* CalculationsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalculationsCell.xib; sourceTree = "<group>"; };
+		D3449BA21D9284210050BB3D /* SectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionHeaderView.h; sourceTree = "<group>"; };
+		D3449BA31D9284210050BB3D /* SectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionHeaderView.m; sourceTree = "<group>"; };
+		D3449BA51D9284E50050BB3D /* SectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionHeaderView.xib; sourceTree = "<group>"; };
+		D3449BA71D92BFD50050BB3D /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		FC72CF761DD49441002ECE40 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		FC72CF771DD49441002ECE40 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		FC72CF781DD49441002ECE40 /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		FC7F000B1DD1ACAF0048DC10 /* FliteCalculators.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FliteCalculators.xcdatamodel; sourceTree = "<group>"; };
+		FC7F00121DD1C4BE0048DC10 /* WeightBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightBalance.h; sourceTree = "<group>"; };
+		FC7F00131DD1C4BE0048DC10 /* WeightBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightBalance.m; sourceTree = "<group>"; };
+		FCB116301DD06F6C00FA8F28 /* CalculatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculatorViewController.h; sourceTree = "<group>"; };
+		FCB116311DD06F6C00FA8F28 /* CalculatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculatorViewController.m; sourceTree = "<group>"; };
+		FCB116351DD0861000FA8F28 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQNSArray+Sort.h"; sourceTree = "<group>"; };
+		FCB116361DD0861000FA8F28 /* IQNSArray+Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		FCB116371DD0861000FA8F28 /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
+		FCB116381DD0861000FA8F28 /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
+		FCB116391DD0861000FA8F28 /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
+		FCB1163A1DD0861000FA8F28 /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
+		FCB1163B1DD0861000FA8F28 /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
+		FCB1163C1DD0861000FA8F28 /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		FCB1163D1DD0861000FA8F28 /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIViewController+Additions.h"; sourceTree = "<group>"; };
+		FCB1163E1DD0861000FA8F28 /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIViewController+Additions.m"; sourceTree = "<group>"; };
+		FCB1163F1DD0861000FA8F28 /* IQUIWindow+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIWindow+Hierarchy.h"; sourceTree = "<group>"; };
+		FCB116401DD0861000FA8F28 /* IQUIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIWindow+Hierarchy.m"; sourceTree = "<group>"; };
+		FCB116421DD0861000FA8F28 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
+		FCB116431DD0861000FA8F28 /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
+		FCB116441DD0861000FA8F28 /* IQKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardManager.h; sourceTree = "<group>"; };
+		FCB116451DD0861000FA8F28 /* IQKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardManager.m; sourceTree = "<group>"; };
+		FCB116461DD0861000FA8F28 /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
+		FCB116471DD0861000FA8F28 /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
+		FCB116491DD0861000FA8F28 /* IQTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTextView.h; sourceTree = "<group>"; };
+		FCB1164A1DD0861000FA8F28 /* IQTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTextView.m; sourceTree = "<group>"; };
+		FCB1164C1DD0861000FA8F28 /* IQBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQBarButtonItem.h; sourceTree = "<group>"; };
+		FCB1164D1DD0861000FA8F28 /* IQBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQBarButtonItem.m; sourceTree = "<group>"; };
+		FCB1164E1DD0861000FA8F28 /* IQPreviousNextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQPreviousNextView.h; sourceTree = "<group>"; };
+		FCB1164F1DD0861000FA8F28 /* IQPreviousNextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQPreviousNextView.m; sourceTree = "<group>"; };
+		FCB116501DD0861000FA8F28 /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQTitleBarButtonItem.h; sourceTree = "<group>"; };
+		FCB116511DD0861000FA8F28 /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQTitleBarButtonItem.m; sourceTree = "<group>"; };
+		FCB116521DD0861000FA8F28 /* IQToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IQToolbar.h; sourceTree = "<group>"; };
+		FCB116531DD0861000FA8F28 /* IQToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQToolbar.m; sourceTree = "<group>"; };
+		FCB116541DD0861000FA8F28 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
+		FCB116551DD0861000FA8F28 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
+		FCB116571DD0861000FA8F28 /* IQKeyboardManager.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = IQKeyboardManager.bundle; sourceTree = "<group>"; };
+		FCB52FC01DD4882A00A36672 /* FlightPlanning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightPlanning.h; sourceTree = "<group>"; };
+		FCB52FC11DD4882A00A36672 /* FlightPlanning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightPlanning.m; sourceTree = "<group>"; };
+		FCB52FC21DD4882A00A36672 /* FlightPlanning+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FlightPlanning+CoreDataProperties.h"; sourceTree = "<group>"; };
+		FCB52FC31DD4882A00A36672 /* FlightPlanning+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FlightPlanning+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FCDCB6391DCB559200AA5F1C /* WeightAndBalanceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightAndBalanceCell.h; sourceTree = "<group>"; };
+		FCDCB63A1DCB559200AA5F1C /* WeightAndBalanceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightAndBalanceCell.m; sourceTree = "<group>"; };
+		FCDCB63B1DCB559200AA5F1C /* WeightAndBalanceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeightAndBalanceCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3449B5E1D925F6F0050BB3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3449B581D925F6F0050BB3D = {
+			isa = PBXGroup;
+			children = (
+				D3449B631D925F6F0050BB3D /* FliteCalculators */,
+				D3449B621D925F6F0050BB3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3449B621D925F6F0050BB3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3449B611D925F6F0050BB3D /* FliteCalculators.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3449B631D925F6F0050BB3D /* FliteCalculators */ = {
+			isa = PBXGroup;
+			children = (
+				FC7F00111DD1C4AD0048DC10 /* Model */,
+				D3449B7E1D92619D0050BB3D /* Application */,
+				D3449B7D1D9261920050BB3D /* ViewController */,
+				D3449B921D9276730050BB3D /* CustomClasses */,
+				D3449B701D925F6F0050BB3D /* Assets.xcassets */,
+				D3449B751D925F6F0050BB3D /* Info.plist */,
+				D3449B641D925F6F0050BB3D /* Supporting Files */,
+			);
+			path = FliteCalculators;
+			sourceTree = "<group>";
+		};
+		D3449B641D925F6F0050BB3D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3449B651D925F6F0050BB3D /* main.m */,
+				FC7F000A1DD1ACAF0048DC10 /* FliteCalculators.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3449B7D1D9261920050BB3D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FCB116301DD06F6C00FA8F28 /* CalculatorViewController.h */,
+				FCB116311DD06F6C00FA8F28 /* CalculatorViewController.m */,
+				D3449B821D9263BA0050BB3D /* FliteCalcViewController.h */,
+				D3449B831D9263BA0050BB3D /* FliteCalcViewController.m */,
+				D3449B841D9263BA0050BB3D /* FliteCalcViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D3449B7E1D92619D0050BB3D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FCB116331DD0861000FA8F28 /* IQKeyboardManager */,
+				D3449B7F1D92619D0050BB3D /* AppDelegate.h */,
+				D3449B801D92619D0050BB3D /* AppDelegate.m */,
+				D3449BA71D92BFD50050BB3D /* Constants.h */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D3449B921D9276730050BB3D /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D3449BA11D9284210050BB3D /* Views */,
+				D3449B931D9276730050BB3D /* Cells */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		D3449B931D9276730050BB3D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D3449B941D9276D20050BB3D /* ConversionsCell.h */,
+				D3449B951D9276D20050BB3D /* ConversionsCell.m */,
+				D3449B961D9276D20050BB3D /* ConversionsCell.xib */,
+				D3449B971D9276D20050BB3D /* CalculationsCell.h */,
+				D3449B981D9276D20050BB3D /* CalculationsCell.m */,
+				D3449B991D9276D20050BB3D /* CalculationsCell.xib */,
+				FCDCB6391DCB559200AA5F1C /* WeightAndBalanceCell.h */,
+				FCDCB63A1DCB559200AA5F1C /* WeightAndBalanceCell.m */,
+				FCDCB63B1DCB559200AA5F1C /* WeightAndBalanceCell.xib */,
+				039DA3331DD0B86D00EA9DA6 /* PerformanceCell.h */,
+				039DA3341DD0B86D00EA9DA6 /* PerformanceCell.m */,
+				039DA3351DD0B86D00EA9DA6 /* PerformanceCell.xib */,
+				039DA33D1DD0D21300EA9DA6 /* FlightPlanningCell.h */,
+				039DA33E1DD0D21300EA9DA6 /* FlightPlanningCell.m */,
+				039DA33F1DD0D21300EA9DA6 /* FlightPlanningCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D3449BA11D9284210050BB3D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D3449BA21D9284210050BB3D /* SectionHeaderView.h */,
+				D3449BA31D9284210050BB3D /* SectionHeaderView.m */,
+				D3449BA51D9284E50050BB3D /* SectionHeaderView.xib */,
+				FC72CF761DD49441002ECE40 /* CustomCell.h */,
+				FC72CF771DD49441002ECE40 /* CustomCell.m */,
+				FC72CF781DD49441002ECE40 /* CustomCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC7F00111DD1C4AD0048DC10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				038B42411DD75C7F0057E3AA /* TMLineGraph.h */,
+				038B42421DD75C7F0057E3AA /* TMLineGraph.m */,
+				FCB52FC01DD4882A00A36672 /* FlightPlanning.h */,
+				FCB52FC11DD4882A00A36672 /* FlightPlanning.m */,
+				FCB52FC21DD4882A00A36672 /* FlightPlanning+CoreDataProperties.h */,
+				FCB52FC31DD4882A00A36672 /* FlightPlanning+CoreDataProperties.m */,
+				FC7F00121DD1C4BE0048DC10 /* WeightBalance.h */,
+				FC7F00131DD1C4BE0048DC10 /* WeightBalance.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCB116331DD0861000FA8F28 /* IQKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				FCB116341DD0861000FA8F28 /* Categories */,
+				FCB116411DD0861000FA8F28 /* Constants */,
+				FCB116441DD0861000FA8F28 /* IQKeyboardManager.h */,
+				FCB116451DD0861000FA8F28 /* IQKeyboardManager.m */,
+				FCB116461DD0861000FA8F28 /* IQKeyboardReturnKeyHandler.h */,
+				FCB116471DD0861000FA8F28 /* IQKeyboardReturnKeyHandler.m */,
+				FCB116481DD0861000FA8F28 /* IQTextView */,
+				FCB1164B1DD0861000FA8F28 /* IQToolbar */,
+				FCB116561DD0861000FA8F28 /* Resources */,
+			);
+			path = IQKeyboardManager;
+			sourceTree = "<group>";
+		};
+		FCB116341DD0861000FA8F28 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FCB116351DD0861000FA8F28 /* IQNSArray+Sort.h */,
+				FCB116361DD0861000FA8F28 /* IQNSArray+Sort.m */,
+				FCB116371DD0861000FA8F28 /* IQUIScrollView+Additions.h */,
+				FCB116381DD0861000FA8F28 /* IQUIScrollView+Additions.m */,
+				FCB116391DD0861000FA8F28 /* IQUITextFieldView+Additions.h */,
+				FCB1163A1DD0861000FA8F28 /* IQUITextFieldView+Additions.m */,
+				FCB1163B1DD0861000FA8F28 /* IQUIView+Hierarchy.h */,
+				FCB1163C1DD0861000FA8F28 /* IQUIView+Hierarchy.m */,
+				FCB1163D1DD0861000FA8F28 /* IQUIViewController+Additions.h */,
+				FCB1163E1DD0861000FA8F28 /* IQUIViewController+Additions.m */,
+				FCB1163F1DD0861000FA8F28 /* IQUIWindow+Hierarchy.h */,
+				FCB116401DD0861000FA8F28 /* IQUIWindow+Hierarchy.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		FCB116411DD0861000FA8F28 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				FCB116421DD0861000FA8F28 /* IQKeyboardManagerConstants.h */,
+				FCB116431DD0861000FA8F28 /* IQKeyboardManagerConstantsInternal.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FCB116481DD0861000FA8F28 /* IQTextView */ = {
+			isa = PBXGroup;
+			children = (
+				FCB116491DD0861000FA8F28 /* IQTextView.h */,
+				FCB1164A1DD0861000FA8F28 /* IQTextView.m */,
+			);
+			path = IQTextView;
+			sourceTree = "<group>";
+		};
+		FCB1164B1DD0861000FA8F28 /* IQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				FCB1164C1DD0861000FA8F28 /* IQBarButtonItem.h */,
+				FCB1164D1DD0861000FA8F28 /* IQBarButtonItem.m */,
+				FCB1164E1DD0861000FA8F28 /* IQPreviousNextView.h */,
+				FCB1164F1DD0861000FA8F28 /* IQPreviousNextView.m */,
+				FCB116501DD0861000FA8F28 /* IQTitleBarButtonItem.h */,
+				FCB116511DD0861000FA8F28 /* IQTitleBarButtonItem.m */,
+				FCB116521DD0861000FA8F28 /* IQToolbar.h */,
+				FCB116531DD0861000FA8F28 /* IQToolbar.m */,
+				FCB116541DD0861000FA8F28 /* IQUIView+IQKeyboardToolbar.h */,
+				FCB116551DD0861000FA8F28 /* IQUIView+IQKeyboardToolbar.m */,
+			);
+			path = IQToolbar;
+			sourceTree = "<group>";
+		};
+		FCB116561DD0861000FA8F28 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FCB116571DD0861000FA8F28 /* IQKeyboardManager.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D3449B601D925F6F0050BB3D /* FliteCalculators */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3449B781D925F6F0050BB3D /* Build configuration list for PBXNativeTarget "FliteCalculators" */;
+			buildPhases = (
+				D3449B5D1D925F6F0050BB3D /* Sources */,
+				D3449B5E1D925F6F0050BB3D /* Frameworks */,
+				D3449B5F1D925F6F0050BB3D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FliteCalculators;
+			productName = FliteCalculators;
+			productReference = D3449B611D925F6F0050BB3D /* FliteCalculators.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3449B591D925F6F0050BB3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = RAZZOR;
+				TargetAttributes = {
+					D3449B601D925F6F0050BB3D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YKBQD36994;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D3449B5C1D925F6F0050BB3D /* Build configuration list for PBXProject "FliteCalculators" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D3449B581D925F6F0050BB3D;
+			productRefGroup = D3449B621D925F6F0050BB3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3449B601D925F6F0050BB3D /* FliteCalculators */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3449B5F1D925F6F0050BB3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC72CF7A1DD49441002ECE40 /* CustomCell.xib in Resources */,
+				D3449B9B1D9276D20050BB3D /* ConversionsCell.xib in Resources */,
+				D3449B9D1D9276D20050BB3D /* CalculationsCell.xib in Resources */,
+				FCDCB63D1DCB559200AA5F1C /* WeightAndBalanceCell.xib in Resources */,
+				039DA3411DD0D21300EA9DA6 /* FlightPlanningCell.xib in Resources */,
+				D3449BA61D9284E50050BB3D /* SectionHeaderView.xib in Resources */,
+				FCB116661DD0861100FA8F28 /* IQKeyboardManager.bundle in Resources */,
+				D3449B861D9263BA0050BB3D /* FliteCalcViewController.xib in Resources */,
+				039DA3371DD0B86D00EA9DA6 /* PerformanceCell.xib in Resources */,
+				D3449B711D925F6F0050BB3D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3449B5D1D925F6F0050BB3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCB1165E1DD0861100FA8F28 /* IQKeyboardManager.m in Sources */,
+				FCB1165A1DD0861100FA8F28 /* IQUITextFieldView+Additions.m in Sources */,
+				FCB116641DD0861100FA8F28 /* IQToolbar.m in Sources */,
+				FCB116651DD0861100FA8F28 /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				039DA3401DD0D21300EA9DA6 /* FlightPlanningCell.m in Sources */,
+				FCB1165C1DD0861100FA8F28 /* IQUIViewController+Additions.m in Sources */,
+				D3449B661D925F6F0050BB3D /* main.m in Sources */,
+				FCB116591DD0861100FA8F28 /* IQUIScrollView+Additions.m in Sources */,
+				FCB116631DD0861100FA8F28 /* IQTitleBarButtonItem.m in Sources */,
+				FCB116601DD0861100FA8F28 /* IQTextView.m in Sources */,
+				D3449BA41D9284210050BB3D /* SectionHeaderView.m in Sources */,
+				FCB1165B1DD0861100FA8F28 /* IQUIView+Hierarchy.m in Sources */,
+				FC7F000C1DD1ACAF0048DC10 /* FliteCalculators.xcdatamodeld in Sources */,
+				FCB116611DD0861100FA8F28 /* IQBarButtonItem.m in Sources */,
+				D3449B811D92619D0050BB3D /* AppDelegate.m in Sources */,
+				FCDCB63C1DCB559200AA5F1C /* WeightAndBalanceCell.m in Sources */,
+				FCB1165F1DD0861100FA8F28 /* IQKeyboardReturnKeyHandler.m in Sources */,
+				039DA3361DD0B86D00EA9DA6 /* PerformanceCell.m in Sources */,
+				FCB52FC51DD4882A00A36672 /* FlightPlanning+CoreDataProperties.m in Sources */,
+				FCB52FC41DD4882A00A36672 /* FlightPlanning.m in Sources */,
+				FC72CF791DD49441002ECE40 /* CustomCell.m in Sources */,
+				D3449B851D9263BA0050BB3D /* FliteCalcViewController.m in Sources */,
+				FCB1165D1DD0861100FA8F28 /* IQUIWindow+Hierarchy.m in Sources */,
+				038B42431DD75C7F0057E3AA /* TMLineGraph.m in Sources */,
+				D3449B9A1D9276D20050BB3D /* ConversionsCell.m in Sources */,
+				FCB116581DD0861000FA8F28 /* IQNSArray+Sort.m in Sources */,
+				FCB116321DD06F6C00FA8F28 /* CalculatorViewController.m in Sources */,
+				FC4FE63E1DC89068005F6BDB /* CalculationsCell.m in Sources */,
+				FC7F00141DD1C4BE0048DC10 /* WeightBalance.m in Sources */,
+				FCB116621DD0861100FA8F28 /* IQPreviousNextView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D3449B761D925F6F0050BB3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = YKBQD36994;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "513c5ec8-354d-4c10-8d92-02ec3cbcd2e2";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3449B771D925F6F0050BB3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YKBQD36994;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "513c5ec8-354d-4c10-8d92-02ec3cbcd2e2";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D3449B791D925F6F0050BB3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ravindra Gupta (N59HEXVR68)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YKBQD36994;
+				INFOPLIST_FILE = FliteCalculators/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CALCs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		D3449B7A1D925F6F0050BB3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ravindra Gupta (N59HEXVR68)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = YKBQD36994;
+				INFOPLIST_FILE = FliteCalculators/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = CALCs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3449B5C1D925F6F0050BB3D /* Build configuration list for PBXProject "FliteCalculators" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3449B761D925F6F0050BB3D /* Debug */,
+				D3449B771D925F6F0050BB3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3449B781D925F6F0050BB3D /* Build configuration list for PBXNativeTarget "FliteCalculators" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3449B791D925F6F0050BB3D /* Debug */,
+				D3449B7A1D925F6F0050BB3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC7F000A1DD1ACAF0048DC10 /* FliteCalculators.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC7F000B1DD1ACAF0048DC10 /* FliteCalculators.xcdatamodel */,
+			);
+			currentVersion = FC7F000B1DD1ACAF0048DC10 /* FliteCalculators.xcdatamodel */;
+			path = FliteCalculators.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D3449B591D925F6F0050BB3D /* Project object */;
+}
